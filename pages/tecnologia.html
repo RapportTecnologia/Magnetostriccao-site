@@ -1,0 +1,182 @@
+---
+layout: default
+title: "Tecnologia"
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="badge">Tecnologia</span>
+    <h1>Metodologias e <span>Hardware</span></h1>
+    <p>Conheça as técnicas de aquisição, análise de sinais e os equipamentos utilizados no Projeto Magneto.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="badge">Metodologia</span>
+      <h2>Aquisição e Análise dos Ruídos</h2>
+      <p>Do sensor ao diagnóstico: como transformamos ruídos em informações valiosas.</p>
+    </div>
+    <div class="feature-row fade-in">
+      <div class="feature-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Sensores Acústicos e Acelerômetros</h4>
+            <p>Microfones especiais captam os ruídos de magnetostrição dos transformadores.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Drones Terrestres</h4>
+            <p>Agilizam as coletas, trazem precisão e autonomia, além da segurança aos operadores. Permitem a adição de outros métodos de diagnóstico.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Digitalização de Dados</h4>
+            <p>Sinais acústicos são convertidos em dados digitais para processamento.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Análise Espectral</h4>
+            <p>Frequências e amplitudes são analisadas para identificar padrões.</p>
+          </div>
+          <div class="timeline-item">
+            <h4>Inteligência Artificial</h4>
+            <p>Algoritmos com apoio de redes neurais convolucionais identificam desvios e problemas, classificando o sinal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-image">
+        <div class="img-rounded">
+          <img src="{{ '/assets/images/p23_img3.png' | relative_url }}" alt="Técnico realizando inspeção em Transformador">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="badge">Hardware</span>
+      <h2>Equipamentos do Projeto</h2>
+      <p>Microcontroladores e sensores especializados para processamento embarcado.</p>
+    </div>
+    <div class="grid grid-2 fade-in">
+      <div class="card card-img">
+        <div class="card-img-wrap">
+          <img src="{{ '/assets/images/p24_img3.png' | relative_url }}" alt="STM32N6570-DK">
+        </div>
+        <h3>STM32N6570-DK</h3>
+        <p>Microcontrolador capaz de controlar o rover e analisar sinais para tomada de decisão em campo. Equipado com NPU (Unidade de Processamento Neural) que permite executar redes neurais em sistemas embarcados.</p>
+        <ul>
+          <li>4,5 MB de memória contínua</li>
+          <li>Opera entre 600 MHz e 800 MHz</li>
+          <li>Valor: US$ 237,00</li>
+        </ul>
+      </div>
+      <div class="card card-img">
+        <div class="card-img-wrap">
+          <img src="{{ '/assets/images/p25_img3.png' | relative_url }}" alt="Steval Proteus 1">
+        </div>
+        <h3>Steval Proteus 1</h3>
+        <p>Ferramenta de precisão para uso industrial para coleta de vibrações e temperatura, baseado em SoC wireless multiprotocolo na faixa dos 2.4GHz.</p>
+        <ul>
+          <li>Bluetooth® Low Energy v5.2 e ZigBee 3.0</li>
+          <li>Alimentado por bateria</li>
+          <li>Valor: US$ 50,00 (uma unidade por transformador)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="feature-row fade-in">
+      <div class="feature-content">
+        <span class="badge">Acústica</span>
+        <h2>Sistema Acústico</h2>
+        <p>A aplicação de sistemas acústicos com acopladores parabólicos, embarcados em rovers terrestres para a coleta de ruídos de magnetostrição, representa uma proposta de alto potencial.</p>
+        <p>Para garantir a eficácia e a confiabilidade desta metodologia, são necessários testes rigorosos em campo. A validação exige comparações extensivas dos dados coletados com metodologias de diagnóstico já estabelecidas.</p>
+      </div>
+      <div class="feature-image">
+        <div class="img-rounded">
+          <img src="{{ '/assets/images/p26_img3.png' | relative_url }}" alt="Rover com Transformador - Sistema Acústico">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="badge">Análise de Sinais</span>
+      <h2>Métodos de Decomposição e Análise</h2>
+      <p>Técnicas avançadas para transpor sinais do domínio do tempo para o domínio da frequência.</p>
+    </div>
+    <div class="grid grid-2 fade-in">
+      <div>
+        <div class="img-rounded">
+          <img src="{{ '/assets/images/p28_img3.png' | relative_url }}" alt="Análise Espectral de Sinais">
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3>Cepstral (Melhor Opção)</h3>
+          <p>Superou a FFT em velocidade, demonstrando o melhor desempenho até o momento. Ainda precisa validação no STM32N6.</p>
+        </div>
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3>MUSIC</h3>
+          <p>Alta resolução e separa sinal de ruído, mas sobrecarregou significativamente a máquina com desempenho lento.</p>
+        </div>
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3>ESPRIT</h3>
+          <p>Computacionalmente mais rápido que MUSIC, porém ainda não obtiveram sucesso na implementação.</p>
+        </div>
+        <div class="card">
+          <h3>PRONY</h3>
+          <p>Indicado para sinais transientes, como ao ligar o transformador ou durante imposição instantânea de altas cargas. Ainda não testado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2 fade-in">
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Método de Classificação</h3>
+        <p>Utilizamos uma rede convolucional (CNN) para classificação dos sinais. Há planos de usar Transformers também, porém pode exigir maior poder computacional. Transformers pode ser útil em visão computacional no futuro.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏱️</div>
+        <h3>Tempo de Resposta</h3>
+        <p>Em simulação com Core i7, 16GB RAM e RTX4060, o tempo girou em torno de alguns segundos por amostras de até 2 minutos. Cada transformador leva em torno de 5 minutos entre captura e análise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="feature-row fade-in">
+      <div class="feature-content">
+        <span class="badge">Dados</span>
+        <h2>Banco de Amostras</h2>
+        <p>Um banco de amostras bem selecionado é de extrema importância. O método proposto viabiliza o aperfeiçoamento constante do modelo treinado:</p>
+        <ul>
+          <li>A cada novo transformador instalado, cadastra-se sua assinatura inicial como referência</li>
+          <li>Transformadores novos são classificados como "Equipamento Novo"</li>
+          <li>Equipamentos revisados são classificados como "Equipamento em Bom Estado"</li>
+          <li>Considerando os 184 municípios do Ceará, teremos 184 amostras iniciais</li>
+        </ul>
+      </div>
+      <div class="feature-image">
+        <div class="img-rounded">
+          <img src="{{ '/assets/images/p29_img3.png' | relative_url }}" alt="Camadas de Classificação Neural">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

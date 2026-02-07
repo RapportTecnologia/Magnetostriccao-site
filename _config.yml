@@ -1,0 +1,15 @@
+title: "Projeto Magneto"
+description: "Diagnóstico da Saúde de Transformadores de Alta Potência via Ruídos de Magnetostricção com apoio de Drones Terrestres"
+baseurl: ""
+url: ""
+lang: "pt-BR"
+author: "Carlos Delfino"
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
